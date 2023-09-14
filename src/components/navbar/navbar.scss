@@ -1,0 +1,55 @@
+/* navbar.scss */
+
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  .nav-links {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 20px;
+
+    .svg-inline--fa {
+      margin-right: 10px;
+      cursor: pointer;
+      transition: color 0.2s;
+
+      &:hover {
+        color: lightblue;
+      }
+    }
+  }
+
+  .nav-link-user {
+    display: flex;
+    align-items: center;
+
+    .svg-inline--fa {
+      cursor: pointer;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+}

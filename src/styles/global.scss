@@ -6,4 +6,21 @@
 
 .main {
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.menuContainer {
+  flex: 1;
+  border-right: 2px solid #ccc;
+}
+
+.contentContainer {
+  flex: 5;
 }
