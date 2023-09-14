@@ -1,7 +1,7 @@
 /* navbar.scss */
-
+@import "../../styles/varibale.scss";
 .navbar {
-  background-color: #333;
+  background-color: $nav-bg;
   color: white;
   display: flex;
   justify-content: space-between;

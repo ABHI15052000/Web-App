@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./users.scss";
-
+import TextInput from "../../components/textInput/TextInput";
+import Button from "../../components/button/Button";
 const Users = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -10,10 +11,6 @@ const Users = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-  };
-
-  const handleAddDriver = () => {
-    closeModal();
   };
 
   useEffect(() => {
@@ -31,7 +28,7 @@ const Users = () => {
 
   return (
     <div className="users">
-      <div className="addUserConatainer">
+      <div className="addUserContainer">
         <h1>Users</h1>
         <button className="addBtn" onClick={openModal}>
           Add Driver +
@@ -39,11 +36,26 @@ const Users = () => {
         {isModalOpen && (
           <div className="modal-overlay">
             <div className="modal-content">
-              <span className="close" onClick={closeModal}>
-                &times;
-              </span>
               <h2>Add New Driver</h2>
-              <button onClick={handleAddDriver}>Save</button>
+              <form>
+                <div className="form-group">
+                  <label style={{ marginBottom: "15px" }}>Name:</label>
+                  <TextInput type="text" placeholder="Enter Name" />
+                </div>
+                <div className="form-group">
+                  <label>Phone Number:</label>
+                  <TextInput type="tel" placeholder="Enter Phone Number" />
+                </div>
+                <div className="form-group">
+                  <label>Email:</label>
+                  <TextInput type="email" placeholder="Enter Email" />
+                </div>
+                <div className="form-group">
+                  <label>Address:</label>
+                  <TextInput type="text" placeholder="Enter Address" />
+                </div>
+              </form>
+              <Button text={"Add Driver"} onClick={closeModal} />
             </div>
           </div>
         )}

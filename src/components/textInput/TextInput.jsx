@@ -5,6 +5,7 @@ const TextInput = (props) => {
   return (
     <div className="textInput">
       <input
+        placeholder={props.placeholder}
         type={props.type}
         value={props.value}
         onChange={props.onChange}
