@@ -1,0 +1,43 @@
+{
+  "title": "TruckAdmin",
+  "name": "Name",
+  "phnNumber": "Phone Number",
+  "address": "Address",
+  "email": "Email",
+  "password": "Password",
+  "login": {
+    "heading": "Welcome",
+    "subHeading": "Login into your account",
+    "forgetPassword": "Forget Password?",
+    "message": "New User? Sign up here"
+  },
+  "signUp": {
+    "heading": "Welcome",
+    "subHeading": "Create a new account!",
+    "message": "Already have an account? SignIn.",
+    "confirmPassword": "Confirm Password"
+  },
+  "footer": {
+    "message": "Truck Dev Admin Dashboard"
+  },
+  "products": {
+    "heading": "Products"
+  },
+  "home": {
+    "heading": "Home"
+  },
+  "users": {
+    "heading": "Users",
+    "btn": "Add Driver +"
+  },
+  "addDriverModal": {
+    "heading": "Add a new Driver"
+  },
+  "changePassword": {
+    "heading": "Welcome",
+    "subHeading": "Change Your Password!",
+    "oldPassword": "Old password",
+    "newPassoword": "New Password",
+    "confirmPassword": "Confirm Password"
+  }
+}

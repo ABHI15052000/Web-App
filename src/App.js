@@ -9,6 +9,8 @@ import Users from "./pages/users/Users";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import "./styles/global.scss";
+import SignUp from "./pages/signup/SignUp";
+import ChangePassword from "./pages/changePassword/ChangePassword";
 function App() {
   const Layout = () => {
     return (
@@ -49,6 +51,14 @@ function App() {
     {
       path: "/login",
       element: <Login />,
+    },
+    {
+      path: "/signup",
+      element: <SignUp />,
+    },
+    {
+      path: "/changepassword",
+      element: <ChangePassword />,
     },
   ]);
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./users.scss";
 import TextInput from "../../components/textInput/TextInput";
 import Button from "../../components/button/Button";
+import texts from "../../texts";
 const Users = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,29 +30,29 @@ const Users = () => {
   return (
     <div className="users">
       <div className="addUserContainer">
-        <h1>Users</h1>
+        <h1>{texts.users.heading}</h1>
         <button className="addBtn" onClick={openModal}>
-          Add Driver +
+          {texts.users.btn}
         </button>
         {isModalOpen && (
           <div className="modal-overlay">
             <div className="modal-content">
-              <h2>Add New Driver</h2>
+              <h2>{texts.addDriverModal.heading}</h2>
               <form>
                 <div className="form-group">
-                  <label style={{ marginBottom: "15px" }}>Name:</label>
+                  <label style={{ marginBottom: "15px" }}>{texts.name}</label>
                   <TextInput type="text" placeholder="Enter Name" />
                 </div>
                 <div className="form-group">
-                  <label>Phone Number:</label>
+                  <label>{texts.phnNumber}</label>
                   <TextInput type="tel" placeholder="Enter Phone Number" />
                 </div>
                 <div className="form-group">
-                  <label>Email:</label>
+                  <label>{texts.email}</label>
                   <TextInput type="email" placeholder="Enter Email" />
                 </div>
                 <div className="form-group">
-                  <label>Address:</label>
+                  <label>{texts.address}</label>
                   <TextInput type="text" placeholder="Enter Address" />
                 </div>
               </form>

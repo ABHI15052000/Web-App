@@ -1,25 +1,25 @@
 import React from "react";
-import "./login.scss";
+import "./signup.scss";
 import TextInput from "../../components/textInput/TextInput";
 import Button from "../../components/button/Button";
 import texts from "../../texts";
 import { Link } from "react-router-dom";
-import stylesData from "./styles.json";
 
-const Login = () => {
-  const containerStyle = {
-    backgroundImage: `url(${stylesData.styles.backgroundImg})`,
-  };
-
+const SignUp = () => {
   return (
-    <div className="login">
-      <div className="mainContainer" style={containerStyle}>
+    <div className="sign-up">
+      <div className="mainContainer">
         <form>
           <div className="innerContainer">
             <div className="welcome">
               <h1>{texts.login.heading}</h1>
-              <span>{texts.login.subHeading}</span>
+              <span>{texts.signUp.subHeading}</span>
             </div>
+            <div className="name">
+              <span>{texts.name}</span>
+              <TextInput type="text" />
+            </div>
+
             <div className="email">
               <span>{texts.email}</span>
               <TextInput type="text" />
@@ -28,11 +28,13 @@ const Login = () => {
               <span>{texts.password}</span>
               <TextInput type="password" />
             </div>
-            <span className="forgot-password">
-              {texts.login.forgetPassword}
-            </span>
-            <Link to="/signup" className="forgot-password">
-              {texts.login.message}
+            <div className="password">
+              <span>{texts.signUp.confirmPassword}</span>
+              <TextInput type="password" />
+            </div>
+
+            <Link to="/login" className="forgot-password">
+              {texts.signUp.message}
             </Link>
             <Button text="Submit" type="submit" />
           </div>
@@ -42,4 +44,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
