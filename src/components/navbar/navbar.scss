@@ -1,5 +1,5 @@
-/* navbar.scss */
 @import "../../styles/varibale.scss";
+
 .navbar {
   background-color: $nav-bg;
   color: white;
@@ -17,13 +17,11 @@
       height: 30px;
       margin-right: 10px;
     }
-
     span {
       font-weight: bold;
       font-size: 1.2rem;
     }
   }
-
   .nav-links {
     font-size: 1.2rem;
     display: flex;

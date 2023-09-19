@@ -8,13 +8,14 @@ import {
   faEnvelope,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import texts from "../../texts";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
         <img src="logo.svg" alt="Logo" />
-        <span>TruckAdmin</span>
+        <span>{texts.title}</span>
       </div>
       <div className="nav-links">
         <FontAwesomeIcon icon={faHome} />
@@ -23,7 +24,7 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faCog} />
         <div className="nav-link-user">
           <FontAwesomeIcon icon={faUser} />
-          <span>Username</span>
+          <span>{texts.userName}</span>
         </div>
       </div>
     </nav>

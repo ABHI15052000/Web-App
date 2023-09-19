@@ -28,13 +28,15 @@ const Login = () => {
               <span>{texts.password}</span>
               <TextInput type="password" />
             </div>
-            <span className="forgot-password">
+            <Link to="/forgetpassword" className="forgot-password">
               {texts.login.forgetPassword}
-            </span>
+            </Link>
             <Link to="/signup" className="forgot-password">
               {texts.login.message}
             </Link>
-            <Button text="Submit" type="submit" />
+            <Link to="/">
+              <Button text="Submit" type="submit" />
+            </Link>
           </div>
         </form>
       </div>

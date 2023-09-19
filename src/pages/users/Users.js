@@ -3,6 +3,7 @@ import "./users.scss";
 import TextInput from "../../components/textInput/TextInput";
 import Button from "../../components/button/Button";
 import texts from "../../texts";
+
 const Users = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 

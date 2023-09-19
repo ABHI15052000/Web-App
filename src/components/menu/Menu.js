@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { FaBeer } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import { MdPassword } from "react-icons/md";
 
 const Menu = () => {
   return (
@@ -22,11 +23,15 @@ const Menu = () => {
       </Link>
       <Link to="/users">
         <FaUser />
-        <span>OPtions</span>
+        <span>Options</span>
       </Link>
       <Link to="/users">
         <FaUser />
         <span>Users</span>
+      </Link>
+      <Link to="/changepassword">
+        <MdPassword />
+        <span>Change Password</span>
       </Link>
     </div>
   );

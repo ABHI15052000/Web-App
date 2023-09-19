@@ -5,7 +5,7 @@ const Button = (props) => {
     <div className="btnContainer">
       <button className="button" onClick={props.onClick}>
         {props.text}
-      </button>
+      </button>  
     </div>
   );
 };

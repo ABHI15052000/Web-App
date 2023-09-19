@@ -1,3 +1,5 @@
+@import "../../styles/varibale.scss";
+
 .textInput {
   .my-input {
     width: 370px;
@@ -7,5 +9,6 @@
     border: 1px solid;
     padding: 5px 8px 5px 8px;
     border-radius: 7px;
+    caret-color: $soft-color;
   }
 }

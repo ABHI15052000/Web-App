@@ -11,6 +11,8 @@ import Products from "./pages/products/Products";
 import "./styles/global.scss";
 import SignUp from "./pages/signup/SignUp";
 import ChangePassword from "./pages/changePassword/ChangePassword";
+import ForgetPassword from "./pages/fogetPassword/ForgetPassword";
+
 function App() {
   const Layout = () => {
     return (
@@ -59,6 +61,10 @@ function App() {
     {
       path: "/changepassword",
       element: <ChangePassword />,
+    },
+    {
+      path: "/forgetpassword",
+      element: <ForgetPassword />,
     },
   ]);
 

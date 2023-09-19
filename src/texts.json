@@ -5,6 +5,7 @@
   "address": "Address",
   "email": "Email",
   "password": "Password",
+  "userName": "Username",
   "login": {
     "heading": "Welcome",
     "subHeading": "Login into your account",
