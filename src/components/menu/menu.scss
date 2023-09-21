@@ -22,3 +22,9 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .menu {
+    display: none !important;
+  }
+}

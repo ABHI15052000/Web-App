@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import texts from "../../texts";
 import { Link } from "react-router-dom";
 import stylesData from "./styles.json";
+import PasswordInput from "../../components/passwordInput/PasswordInput";
 
 const Login = () => {
   const containerStyle = {
@@ -26,7 +27,7 @@ const Login = () => {
             </div>
             <div className="password">
               <span>{texts.password}</span>
-              <TextInput type="password" />
+              <PasswordInput />
             </div>
             <Link to="/forgetpassword" className="forgot-password">
               {texts.login.forgetPassword}
