@@ -18,9 +18,15 @@
 
 .menuContainer {
   flex: 1;
-  border-right: 2px solid #ccc;
+  border-right: 1px solid grey;
 }
 
 .contentContainer {
   flex: 5;
+}
+
+@media screen and (max-width: 700px) {
+  .menuContainer {
+    display: none;
+  }
 }
