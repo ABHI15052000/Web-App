@@ -9,6 +9,15 @@
   align-items: center;
   padding: 20px 20px;
 
+  .ham {
+    display: none;
+    cursor: pointer;
+
+    svg {
+      font-size: 30px;
+    }
+  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -54,7 +63,14 @@
 }
 
 @media screen and (max-width: 650px) {
-  .nav-links {
+  .nav-links,
+  .logo span {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ham {
+    display: block !important;
   }
 }

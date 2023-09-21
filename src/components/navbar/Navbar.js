@@ -9,10 +9,14 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import texts from "../../texts";
+import { IoReorderThreeOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <div className="ham">
+        <IoReorderThreeOutline />
+      </div>
       <div className="logo">
         <img src="logo.svg" alt="Logo" />
         <span>{texts.title}</span>
