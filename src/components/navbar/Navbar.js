@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,10 +14,24 @@ import Menu from "../menu/Menu";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
     console.log(openMenu);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="navbar">
@@ -38,7 +52,7 @@ const Navbar = () => {
           <span>{texts.userName}</span>
         </div>
       </div>
-      {openMenu && (
+      {openMenu && windowWidth <= 700 && (
         <div className="modal-overlay">
           <div className="modal-content">
             <Menu />

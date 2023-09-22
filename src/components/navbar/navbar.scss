@@ -62,7 +62,7 @@
     .modal-content {
       padding: 20px 0 0 0;
       height: 100%;
-      width: 25%;
+      width: 35%;
       display: flex;
       justify-content: flex-start;
     }
@@ -87,9 +87,6 @@
   .logo span {
     display: none !important;
   }
-}
-
-@media screen and (max-width: 700px) {
   .ham {
     display: block !important;
   }
