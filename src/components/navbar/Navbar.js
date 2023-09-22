@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,11 +10,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import texts from "../../texts";
 import { IoReorderThreeOutline } from "react-icons/io5";
+import Menu from "../menu/Menu";
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+    console.log(openMenu);
+  };
+
   return (
-    <nav className="navbar">
-      <div className="ham">
+    <div className="navbar">
+      <div className="ham" onClick={() => toggleMenu()}>
         <IoReorderThreeOutline />
       </div>
       <div className="logo">
@@ -31,7 +38,14 @@ const Navbar = () => {
           <span>{texts.userName}</span>
         </div>
       </div>
-    </nav>
+      {openMenu && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <Menu />
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 

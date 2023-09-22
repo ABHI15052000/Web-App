@@ -1,7 +1,8 @@
 @import "../../styles/varibale.scss";
 
 .menu {
-  padding: 30px;
+  width: 100%;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -15,10 +16,17 @@
 
     span {
       margin-left: 10px;
-      font-size: 18px;
+      font-size: 100%;
+      overflow: auto;
     }
   }
   svg {
-    font-size: 24px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  svg {
+    display: none !important;
   }
 }

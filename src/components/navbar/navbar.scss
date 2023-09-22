@@ -48,6 +48,26 @@
     }
   }
 
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 1000;
+    justify-content: flex-start;
+
+    .modal-content {
+      padding: 20px 0 0 0;
+      height: 100%;
+      width: 25%;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
   .nav-link-user {
     display: flex;
     align-items: center;
@@ -62,14 +82,14 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .nav-links,
   .logo span {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .ham {
     display: block !important;
   }
