@@ -7,6 +7,8 @@ import TotalRevenue from "../../components/totalRevenue/TotalRevenue";
 import TotalBooking from "../../components/totalBooking/TotalBooking";
 import CircularChart from "../../components/rvenueCircularChart/CircularChart";
 import RevenueAnalytics from "../../components/revenueAnalytics/RevenueAnalytics";
+import ParkingList from "../../components/parkingsList/ParkingList";
+import UsersList from "../../components/usersList/UsersList";
 const Home = () => {
   return (
     <div className="home">
@@ -30,10 +32,12 @@ const Home = () => {
         <div className="box6 box">
           <RevenueAnalytics />
         </div>
-        <div className="box7 box">7</div>
-        <div className="box8 box">8</div>
-        <div className="box9 box">9</div>
-        <div className="box10 box">10</div>
+        <div className="box7 box">
+          <ParkingList />
+        </div>
+        <div className="box8 box">
+          <UsersList />
+        </div>
       </div>
     </div>
   );
