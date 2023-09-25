@@ -1,0 +1,30 @@
+.circularChart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .total-header {
+    display: flex;
+    justify-content: space-between;
+
+    .heading {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .text-1 {
+      font-size: 18px;
+    }
+
+    .text-2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}

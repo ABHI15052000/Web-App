@@ -3,23 +3,39 @@
 
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
-    padding-top: 10px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    gap: 20px;
 
     .box {
       border: 1px solid grey;
-      height: 250px;
       border-radius: 7px;
+      padding: 20px;
     }
-    .box1 {
-      grid-column-start: 1;
-      grid-column-end: 3;
+    .box5 {
+      grid-column: span 1;
+      grid-row: span 3;
+    }
+    .box6 {
+      grid-column: span 2;
+      grid-row: span 3;
     }
     .box7 {
-      grid-column-start: 2;
-      grid-column-end: 4;
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+    .box8 {
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+    .box9 {
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+    .box10 {
+      grid-column: span 2;
+      grid-row: span 3;
     }
   }
 }
